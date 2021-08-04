@@ -1,0 +1,115 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-image: url(gym_faint.png);
+            background-position: center;
+            background-size: cover;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 30px;
+        }
+
+        h1 {
+            width: 500px;
+            background-color: aliceblue;
+            margin: auto;
+            text-align: center;
+            border-radius: 30px;
+            padding: 30px;
+        }
+
+        fieldset {
+            width: 500px;
+            margin-top: 50px;
+            background-color: gray;
+            border-radius: 30px;
+        }
+
+        .p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1 style="text-align:center;"><u>GYM REGISTRATION FORM</u></h1>
+    <form>
+        <fieldset>
+            <p style="text-align: center;">
+                <legend>Enroll</legend>
+            </p>
+            <h3 class="personal">Personal Info</h3>
+            <label for="fname">Firstname:</label>
+            <input type="text" name="fname" id="fname">
+
+            <label for="lname">Lastname:</label>
+            <input type="text" name="lname" id="lname"><br><br>
+
+            <label for="weight">CurrentWeight:</label>
+            <input type="number" name="weight" id="weight">
+
+            <label for="height">Height:</label>
+            <input type="number" name="height" id="height"><br><br>
+
+            <label for="bmi">BMI:</label>
+            <input type="number" name="bmi" id="bmi">
+
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age"><br><br>
+
+            <h3 class="address">Address</h3>
+            <label for="sreetadd">StreetAdress Line1:</label>
+            <input type="text" name="sreetadd" id="sreetadd"><br><br>
+
+            <label for="sreetadd2">StreetAdress Line 2:</label>
+            <input type="text" name="sreetadd2" id="sreetadd2"><br><br>
+
+            <label for="city">City:</label>
+            <input type="text" name="city" id="city">
+
+            <label for="state">State:</label>
+            <input type="text" name="state" id="state"><br><br>
+
+            <label for="code">ZipCode:</label>
+            <input type="number" name="code" id="code">
+
+            <label for="country">Country:</label>
+            <select class="option" name="country">
+                <option disabled="disabled" selected="selected">--choose option</option>
+                <option>India</option>
+                <option>America</option>
+                <option>Africa</option>
+                <option>Canada</option>
+            </select><br><br>
+            <h3 class="contact">Contact Details</h3>
+
+            <label for="phoneno">PhoneNumber:</label>
+            <input type="number" name="phoneno" id="phoneno"><br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" id="email" placeholder="Enter Email" pattern=".+@globex.com" size="30"
+                required><br><br>
+
+            <h3 id="student">Are you begineer ?</h3>
+            <form>
+                <input type="radio" id="yes" name="begineer" value="yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="no" name="begineer" value="no">
+                <label for="no">No</label>
+            </form>
+
+            <p style="text-align: center;">
+                <button type="button">Submit</button>
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>
